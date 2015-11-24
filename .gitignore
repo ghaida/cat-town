@@ -1,0 +1,16 @@
+### CodeKit ###
+# General CodeKit files to ignore
+config.codekit
+/min
+
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
