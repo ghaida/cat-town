@@ -1,0 +1,22 @@
+@import "reset";
+
+@import "bourbon";
+@import "neat";
+
+@import "body";
+@import "typography";
+
+.content-container {
+  @include row();
+}
+.main-content {
+  @include span-columns(12);
+  @include pad(12px);
+  @media only screen and (min-width: 481px) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+}
+footer {
+  margin-bottom: 120px;
+}

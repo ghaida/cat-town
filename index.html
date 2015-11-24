@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>welcome to the cat town</title>
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <link href="/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="css/swag.css" rel="stylesheet">
+        <link href="//cdn.jsdelivr.net/emojione/1.5.2/assets/css/emojione.min.css" rel="stylesheet">
+      </meta>
+    </meta>
+  </head>
+  <body>
+    <div class="wrapper convert-emoji">
+      <div class="content-container">
+        <div class="main-content">
+          <h1>Welcome to the cat town</h1>
+          <img alt="welcome to the cat town" src="img/cat-town.gif">
+          <p class="blink">:cat: It's the cat town :cat:</p>
+          <p class="notes">:notes:</p>
+          <h2>Welcome to the cat town</h2>
+          <img src="img/reservoir-cats.gif">
+          <p class="blink">:cat: It's the cat town :cat:</p>
+          <p class="notes">:notes:</p>
+          <h3>Welcome to the cat town</h3>
+          <img src="img/racoon.jpg">
+          <p class="raccoon">:eyes: raccoon :eyes:</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="convert-emoji">:heart:</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/emojione/1.5.2/lib/js/emojione.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".convert-emoji").each(function() {
+          var original = $(this).html();
+          // use .shortnameToImage if only converting shortnames (for slightly better performance)
+          var converted = emojione.toImage(original);
+          $(this).html(converted);
+        });
+      });
+    </script>
+  </body>
+</html>

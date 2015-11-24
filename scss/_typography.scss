@@ -1,0 +1,54 @@
+body {
+  font-family: $helvetica;
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+img {
+  margin-bottom: 14px;
+}
+h1,
+h2,
+h3 {
+  animation: marquee 4s linear infinite;
+}
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+h1 { margin-top: 92px; }
+h1 { font-size: rem(68); }
+h2 { font-size: rem(48); }
+h3 { font-size: rem(36); }
+
+p {
+  font-size: rem(18);
+}
+.notes {
+  margin-top: 72px;
+  margin-bottom: 72px;
+  text-shadow: 0 0 rgba(255,255,255,1);
+  font-size: rem(72);
+}
+a,
+a:link,
+a:visited {
+  color: rgba(255,255,255,.7);
+}
+a:hover {
+  color: rgba(255,255,255, 1);
+}
+.raccoon {
+  text-transform: uppercase;
+  font-size: rem(36);
+}
+.blink .emojione {
+  animation: blink .75s linear infinite;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 1; }
+  50.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
