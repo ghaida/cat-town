@@ -1,2 +1,1 @@
-# cat-town
-Welcome to the cat town.
+It's the cat town.
